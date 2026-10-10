@@ -1,0 +1,87 @@
+{
+  "file": "split.jpeg",
+  "document_type": "Multiple Policies Consent Form",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (3 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "Proposer Name": {
+      "value": "Ashok",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Ashok": 3
+      },
+      "cross_check": "agrees with other documents (customer name)"
+    },
+    "Reason for Multiple Policies": {
+      "value": "Financial Planning",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Financial Planning": 3
+      }
+    },
+    "Date": {
+      "value": "26/04/2026",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "valid date",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "26/04/2026": 3
+      },
+      "cross_check": "agrees with other documents (signing date)"
+    },
+    "Place": {
+      "value": "West Bihar",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "West Bihar": 3
+      },
+      "cross_check": "agrees with other documents (signing place)"
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "Proposer Name": "Ashok",
+        "Reason for Multiple Policies": "Financial Planning",
+        "Date": "26/04/2026",
+        "Place": "West Bihar"
+      }
+    },
+    {
+      "read": "zoomed region",
+      "values": {
+        "Proposer Name": "Ashok",
+        "Reason for Multiple Policies": "Financial Planning",
+        "Date": "26/04/2026",
+        "Place": "West Bihar"
+      }
+    },
+    {
+      "read": "zoomed region, char-by-char",
+      "values": {
+        "Proposer Name": "Ashok",
+        "Reason for Multiple Policies": "Financial Planning",
+        "Date": "26/04/2026",
+        "Place": "West Bihar"
+      }
+    }
+  ],
+  "flags": [],
+  "needs_human_review": false
+}

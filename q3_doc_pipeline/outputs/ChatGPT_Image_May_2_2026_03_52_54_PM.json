@@ -1,0 +1,83 @@
+{
+  "file": "ChatGPT Image May 2, 2026, 03_52_54 PM.png",
+  "document_type": "Passport",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (2 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "Passport Number": {
+      "value": "X1234567",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "matches A9999999",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "X1234567": 2
+      }
+    },
+    "Date of Birth": {
+      "value": "18/12/1979",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "valid date",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "18/12/1979": 2
+      },
+      "cross_check": "agrees with other documents (date of birth)"
+    },
+    "Date of Expiry": {
+      "value": "01/01/2030",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "valid date",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "01/01/2030": 2
+      }
+    },
+    "MRZ Line 2": {
+      "value": "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08",
+      "confidence": 0.5,
+      "agreement": "2/2",
+      "rule": "date of birth check digit is 5, computed 2; date of expiry check digit is 0, computed 9",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08": 2
+      }
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "Passport Number": "X1234567",
+        "Date of Birth": "18/12/1979",
+        "Date of Expiry": "01/01/2030",
+        "MRZ Line 2": "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08"
+      }
+    },
+    {
+      "read": "full page, char-by-char",
+      "values": {
+        "Passport Number": "X1234567",
+        "Date of Birth": "18/12/1979",
+        "Date of Expiry": "01/01/2030",
+        "MRZ Line 2": "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08"
+      }
+    }
+  ],
+  "flags": [
+    {
+      "field": "MRZ Line 2",
+      "value": "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08",
+      "confidence": 0.5,
+      "reason": "reads agreed 2/2; rule: date of birth check digit is 5, computed 2; date of expiry check digit is 0, computed 9"
+    }
+  ],
+  "needs_human_review": true
+}

@@ -1,0 +1,85 @@
+{
+  "file": "ID.png",
+  "document_type": "PAN Card",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (2 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "PAN Number": {
+      "value": "ABCDE1234F",
+      "confidence": 0.6,
+      "agreement": "2/2",
+      "rule": "matches PAN format AAAAA9999A",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "ABCDE1234F": 2
+      },
+      "cross_check": "CONFLICT (PAN): documents disagree and no value is confirmed by two documents"
+    },
+    "Full Name": {
+      "value": "MR. ASHOK",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "no format rule",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "MR. ASHOK": 2
+      },
+      "cross_check": "agrees with other documents (customer name)"
+    },
+    "Father's Name": {
+      "value": "KUMAR",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "no format rule",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "KUMAR": 2
+      }
+    },
+    "Date of Birth": {
+      "value": "18/12/1979",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "valid date",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "18/12/1979": 2
+      },
+      "cross_check": "agrees with other documents (date of birth)"
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "PAN Number": "ABCDE1234F",
+        "Full Name": "MR. ASHOK",
+        "Father's Name": "KUMAR",
+        "Date of Birth": "18/12/1979"
+      }
+    },
+    {
+      "read": "full page, char-by-char",
+      "values": {
+        "PAN Number": "ABCDE1234F",
+        "Full Name": "MR. ASHOK",
+        "Father's Name": "KUMAR",
+        "Date of Birth": "18/12/1979"
+      }
+    }
+  ],
+  "flags": [
+    {
+      "field": "PAN Number",
+      "value": "ABCDE1234F",
+      "confidence": 0.6,
+      "reason": "reads agreed 2/2; rule: matches PAN format AAAAA9999A; CONFLICT (PAN): documents disagree and no value is confirmed by two documents"
+    }
+  ],
+  "needs_human_review": true
+}

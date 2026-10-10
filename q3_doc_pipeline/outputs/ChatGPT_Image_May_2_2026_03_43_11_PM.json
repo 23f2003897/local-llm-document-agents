@@ -1,0 +1,76 @@
+{
+  "file": "ChatGPT Image May 2, 2026, 03_43_11 PM.png",
+  "document_type": "Driving Licence",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (2 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "DL Number": {
+      "value": "MH12 2021 0001234",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "matches SS99 YYYY NNNNNNN",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "MH12 2021 0001234": 2
+      }
+    },
+    "Name": {
+      "value": "MR. ASHOK",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "no format rule",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "MR. ASHOK": 2
+      },
+      "cross_check": "agrees with other documents (customer name)"
+    },
+    "Date of Issue": {
+      "value": "15/06/2021",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "valid date",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "15/06/2021": 2
+      }
+    },
+    "Valid Till": {
+      "value": "14/06/2041",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "valid date",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "14/06/2041": 2
+      }
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "DL Number": "MH12 2021 0001234",
+        "Name": "MR. ASHOK",
+        "Date of Issue": "15/06/2021",
+        "Valid Till": "14/06/2041"
+      }
+    },
+    {
+      "read": "full page, char-by-char",
+      "values": {
+        "DL Number": "MH12 2021 0001234",
+        "Name": "MR. ASHOK",
+        "Date of Issue": "15/06/2021",
+        "Valid Till": "14/06/2041"
+      }
+    }
+  ],
+  "flags": [],
+  "needs_human_review": false
+}

@@ -1,0 +1,112 @@
+{
+  "file": "Moral.jpeg",
+  "document_type": "Moral Hazard Questionnaire",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (1 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "Application Number": {
+      "value": "1500137601025",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "digits only",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "1500137601025": 3
+      },
+      "cross_check": "agrees with other documents (application / policy number)"
+    },
+    "Name of Life Assured": {
+      "value": "Ashok",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Ashok": 3
+      },
+      "cross_check": "agrees with other documents (customer name)"
+    },
+    "Nominee Relationship": {
+      "value": "Nephew",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Nephew": 3
+      }
+    },
+    "Date": {
+      "value": "26/04/2026",
+      "confidence": 0.73,
+      "agreement": "2/3",
+      "rule": "valid date",
+      "source": "handwritten",
+      "alternatives": [
+        "26/04/2006"
+      ],
+      "reads": {
+        "26/04/2006": 1,
+        "26/04/2026": 2
+      },
+      "cross_check": "agrees with other documents (signing date)"
+    },
+    "Place": {
+      "value": "West Bihar",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "West Bihar": 3
+      },
+      "cross_check": "agrees with other documents (signing place)"
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "Application Number": "1500137601025",
+        "Name of Life Assured": "Ashok",
+        "Nominee Relationship": "Nephew",
+        "Date": "26/04/2006",
+        "Place": "West Bihar"
+      }
+    },
+    {
+      "read": "zoomed region",
+      "values": {
+        "Application Number": "1500137601025",
+        "Name of Life Assured": "Ashok",
+        "Nominee Relationship": "Nephew",
+        "Date": "26/04/2026",
+        "Place": "West Bihar"
+      }
+    },
+    {
+      "read": "zoomed region, char-by-char",
+      "values": {
+        "Application Number": "1500137601025",
+        "Name of Life Assured": "Ashok",
+        "Nominee Relationship": "Nephew",
+        "Date": "26/04/2026",
+        "Place": "West Bihar"
+      }
+    }
+  ],
+  "flags": [
+    {
+      "field": "Date",
+      "value": "26/04/2026",
+      "confidence": 0.73,
+      "reason": "reads agreed 2/3; other readings: ['26/04/2006']; rule: valid date"
+    }
+  ],
+  "needs_human_review": true
+}

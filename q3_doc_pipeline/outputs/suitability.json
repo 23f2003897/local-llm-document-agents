@@ -1,0 +1,112 @@
+{
+  "file": "suitability.jpeg",
+  "document_type": "Suitability Profiler Declaration",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (1 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "Application Number": {
+      "value": "1500137601025",
+      "confidence": 0.73,
+      "agreement": "2/3",
+      "rule": "digits only",
+      "source": "handwritten",
+      "alternatives": [
+        "1500131601025"
+      ],
+      "reads": {
+        "1500131601025": 1,
+        "1500137601025": 2
+      },
+      "cross_check": "agrees with other documents (application / policy number)"
+    },
+    "Name of Life Assured": {
+      "value": "Ashok",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Ashok": 3
+      },
+      "cross_check": "agrees with other documents (customer name)"
+    },
+    "Name of Agent/SP": {
+      "value": "Ramesh Kumar",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Ramesh Kumar": 3
+      }
+    },
+    "Date": {
+      "value": "26/04/2026",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "valid date",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "26/04/2026": 3
+      },
+      "cross_check": "agrees with other documents (signing date)"
+    },
+    "Place": {
+      "value": "West Bihar",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "West Bihar": 3
+      },
+      "cross_check": "agrees with other documents (signing place)"
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "Application Number": "1500131601025",
+        "Name of Life Assured": "Ashok",
+        "Name of Agent/SP": "Ramesh Kumar",
+        "Date": "26/04/2026",
+        "Place": "West Bihar"
+      }
+    },
+    {
+      "read": "zoomed region",
+      "values": {
+        "Application Number": "1500137601025",
+        "Name of Life Assured": "Ashok",
+        "Name of Agent/SP": "Ramesh Kumar",
+        "Date": "26/04/2026",
+        "Place": "West Bihar"
+      }
+    },
+    {
+      "read": "zoomed region, char-by-char",
+      "values": {
+        "Application Number": "1500137601025",
+        "Name of Life Assured": "Ashok",
+        "Name of Agent/SP": "Ramesh Kumar",
+        "Date": "26/04/2026",
+        "Place": "West Bihar"
+      }
+    }
+  ],
+  "flags": [
+    {
+      "field": "Application Number",
+      "value": "1500137601025",
+      "confidence": 0.73,
+      "reason": "reads agreed 2/3; other readings: ['1500131601025']; rule: digits only"
+    }
+  ],
+  "needs_human_review": true
+}

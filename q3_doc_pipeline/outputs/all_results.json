@@ -1,0 +1,995 @@
+[
+  {
+    "file": "Aadhar.png",
+    "document_type": "Aadhaar Card",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (4 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "Aadhaar Number": {
+        "value": "123456789012",
+        "confidence": 0.5,
+        "agreement": "2/2",
+        "rule": "12 digits but Verhoeff check digit fails (number cannot be a real Aadhaar)",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "123456789012": 2
+        }
+      },
+      "Full Name": {
+        "value": "Mr. Ashok",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "no format rule",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "Mr. Ashok": 2
+        },
+        "cross_check": "agrees with other documents (customer name)"
+      },
+      "Date of Birth": {
+        "value": "18/12/1979",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "valid date",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "18/12/1979": 2
+        },
+        "cross_check": "agrees with other documents (date of birth)"
+      },
+      "Address": {
+        "value": "S/O Kumar, Kataia, West Bihar India - 841543",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "no format rule",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "S/O Kumar, Kataia, West Bihar India - 841543": 2
+        }
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "Aadhaar Number": "123456789012",
+          "Full Name": "Mr. Ashok",
+          "Date of Birth": "18/12/1979",
+          "Address": "S/O Kumar, Kataia, West Bihar India - 841543"
+        }
+      },
+      {
+        "read": "full page, char-by-char",
+        "values": {
+          "Aadhaar Number": "123456789012",
+          "Full Name": "Mr. Ashok",
+          "Date of Birth": "18/12/1979",
+          "Address": "S/O Kumar, Kataia, West Bihar India - 841543"
+        }
+      }
+    ],
+    "flags": [
+      {
+        "field": "Aadhaar Number",
+        "value": "123456789012",
+        "confidence": 0.5,
+        "reason": "reads agreed 2/2; rule: 12 digits but Verhoeff check digit fails (number cannot be a real Aadhaar)"
+      }
+    ],
+    "needs_human_review": true
+  },
+  {
+    "file": "Assignment Ashok.pdf",
+    "document_type": "Other / Unknown",
+    "classification_confidence": 0.9,
+    "classification_reason": "no known type matched by either keyword rule or vision model",
+    "pages": 2,
+    "fields": {},
+    "reads": [],
+    "flags": [
+      {
+        "field": "(document)",
+        "reason": "Document type is not one of the 10 expected types; no extraction schema - route to human review."
+      }
+    ],
+    "needs_human_review": true
+  },
+  {
+    "file": "ChatGPT Image May 2, 2026, 03_43_11 PM.png",
+    "document_type": "Driving Licence",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (2 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "DL Number": {
+        "value": "MH12 2021 0001234",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "matches SS99 YYYY NNNNNNN",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "MH12 2021 0001234": 2
+        }
+      },
+      "Name": {
+        "value": "MR. ASHOK",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "no format rule",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "MR. ASHOK": 2
+        },
+        "cross_check": "agrees with other documents (customer name)"
+      },
+      "Date of Issue": {
+        "value": "15/06/2021",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "valid date",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "15/06/2021": 2
+        }
+      },
+      "Valid Till": {
+        "value": "14/06/2041",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "valid date",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "14/06/2041": 2
+        }
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "DL Number": "MH12 2021 0001234",
+          "Name": "MR. ASHOK",
+          "Date of Issue": "15/06/2021",
+          "Valid Till": "14/06/2041"
+        }
+      },
+      {
+        "read": "full page, char-by-char",
+        "values": {
+          "DL Number": "MH12 2021 0001234",
+          "Name": "MR. ASHOK",
+          "Date of Issue": "15/06/2021",
+          "Valid Till": "14/06/2041"
+        }
+      }
+    ],
+    "flags": [],
+    "needs_human_review": false
+  },
+  {
+    "file": "ChatGPT Image May 2, 2026, 03_52_54 PM.png",
+    "document_type": "Passport",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (2 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "Passport Number": {
+        "value": "X1234567",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "matches A9999999",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "X1234567": 2
+        }
+      },
+      "Date of Birth": {
+        "value": "18/12/1979",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "valid date",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "18/12/1979": 2
+        },
+        "cross_check": "agrees with other documents (date of birth)"
+      },
+      "Date of Expiry": {
+        "value": "01/01/2030",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "valid date",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "01/01/2030": 2
+        }
+      },
+      "MRZ Line 2": {
+        "value": "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08",
+        "confidence": 0.5,
+        "agreement": "2/2",
+        "rule": "date of birth check digit is 5, computed 2; date of expiry check digit is 0, computed 9",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08": 2
+        }
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "Passport Number": "X1234567",
+          "Date of Birth": "18/12/1979",
+          "Date of Expiry": "01/01/2030",
+          "MRZ Line 2": "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08"
+        }
+      },
+      {
+        "read": "full page, char-by-char",
+        "values": {
+          "Passport Number": "X1234567",
+          "Date of Birth": "18/12/1979",
+          "Date of Expiry": "01/01/2030",
+          "MRZ Line 2": "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08"
+        }
+      }
+    ],
+    "flags": [
+      {
+        "field": "MRZ Line 2",
+        "value": "X1234567<7IND7912185M3001010<<<<<<<<<<<<<<08",
+        "confidence": 0.5,
+        "reason": "reads agreed 2/2; rule: date of birth check digit is 5, computed 2; date of expiry check digit is 0, computed 9"
+      }
+    ],
+    "needs_human_review": true
+  },
+  {
+    "file": "ECS.jpeg",
+    "document_type": "NACH / ECS Mandate",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (3 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "Bank Account Number": {
+        "value": "31004258912",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "9-18 digits",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "31004258912": 3
+        }
+      },
+      "IFSC Code": {
+        "value": "SBIN0227112",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "matches IFSC format AAAA0XXXXXX",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "SBIN0227112": 3
+        }
+      },
+      "Bank Name": {
+        "value": "State Bank of India",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "State Bank of India": 3
+        }
+      },
+      "Amount (figures)": {
+        "value": "50000",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "numeric",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "50000": 3
+        }
+      },
+      "Frequency": {
+        "value": "As & when presented",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "As & when presented": 3
+        }
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "Bank Account Number": "31004258912",
+          "IFSC Code": "SBIN0227112",
+          "Bank Name": "State Bank of India",
+          "Amount (figures)": "50000",
+          "Frequency": "As & when presented"
+        }
+      },
+      {
+        "read": "zoomed region",
+        "values": {
+          "Bank Account Number": "31004258912",
+          "IFSC Code": "SBIN0227112",
+          "Bank Name": "State Bank of India",
+          "Amount (figures)": "50000",
+          "Frequency": "As & when presented"
+        }
+      },
+      {
+        "read": "zoomed region, char-by-char",
+        "values": {
+          "Bank Account Number": "31004258912",
+          "IFSC Code": "SBIN0227112",
+          "Bank Name": "State Bank of India",
+          "Amount (figures)": "50000",
+          "Frequency": "As & when presented"
+        }
+      }
+    ],
+    "flags": [],
+    "needs_human_review": false
+  },
+  {
+    "file": "Fatca.jpeg",
+    "document_type": "FATCA Annexure Form",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (4 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "Policy Number": {
+        "value": "1500137601025",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "digits only",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "1500137601025": 3
+        },
+        "cross_check": "agrees with other documents (application / policy number)"
+      },
+      "TIN / PAN": {
+        "value": "BPQPD3051R",
+        "confidence": 0.6,
+        "agreement": "3/3",
+        "rule": "matches PAN format AAAAA9999A",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "BPQPD3051R": 3
+        },
+        "cross_check": "CONFLICT (PAN): documents disagree and no value is confirmed by two documents"
+      },
+      "Father's Name": {
+        "value": "Arjun Das Kumar",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Arjun Das Kumar": 3
+        }
+      },
+      "Place of Birth": {
+        "value": "West Bihar",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "West Bihar": 3
+        }
+      },
+      "Nationality": {
+        "value": "Indian",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Indian": 3
+        }
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "Policy Number": "1500137601025",
+          "TIN / PAN": "BPQPD3051R",
+          "Father's Name": "Arjun Das Kumar",
+          "Place of Birth": "West Bihar",
+          "Nationality": "Indian"
+        }
+      },
+      {
+        "read": "zoomed region",
+        "values": {
+          "Policy Number": "1500137601025",
+          "TIN / PAN": "BPQPD3051R",
+          "Father's Name": "Arjun Das Kumar",
+          "Place of Birth": "West Bihar",
+          "Nationality": "Indian"
+        }
+      },
+      {
+        "read": "zoomed region, char-by-char",
+        "values": {
+          "Policy Number": "1500137601025",
+          "TIN / PAN": "BPQPD3051R",
+          "Father's Name": "Arjun Das Kumar",
+          "Place of Birth": "West Bihar",
+          "Nationality": "Indian"
+        }
+      }
+    ],
+    "flags": [
+      {
+        "field": "TIN / PAN",
+        "value": "BPQPD3051R",
+        "confidence": 0.6,
+        "reason": "reads agreed 3/3; rule: matches PAN format AAAAA9999A; CONFLICT (PAN): documents disagree and no value is confirmed by two documents"
+      }
+    ],
+    "needs_human_review": true
+  },
+  {
+    "file": "ID.png",
+    "document_type": "PAN Card",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (2 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "PAN Number": {
+        "value": "ABCDE1234F",
+        "confidence": 0.6,
+        "agreement": "2/2",
+        "rule": "matches PAN format AAAAA9999A",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "ABCDE1234F": 2
+        },
+        "cross_check": "CONFLICT (PAN): documents disagree and no value is confirmed by two documents"
+      },
+      "Full Name": {
+        "value": "MR. ASHOK",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "no format rule",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "MR. ASHOK": 2
+        },
+        "cross_check": "agrees with other documents (customer name)"
+      },
+      "Father's Name": {
+        "value": "KUMAR",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "no format rule",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "KUMAR": 2
+        }
+      },
+      "Date of Birth": {
+        "value": "18/12/1979",
+        "confidence": 1.0,
+        "agreement": "2/2",
+        "rule": "valid date",
+        "source": "printed",
+        "alternatives": [],
+        "reads": {
+          "18/12/1979": 2
+        },
+        "cross_check": "agrees with other documents (date of birth)"
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "PAN Number": "ABCDE1234F",
+          "Full Name": "MR. ASHOK",
+          "Father's Name": "KUMAR",
+          "Date of Birth": "18/12/1979"
+        }
+      },
+      {
+        "read": "full page, char-by-char",
+        "values": {
+          "PAN Number": "ABCDE1234F",
+          "Full Name": "MR. ASHOK",
+          "Father's Name": "KUMAR",
+          "Date of Birth": "18/12/1979"
+        }
+      }
+    ],
+    "flags": [
+      {
+        "field": "PAN Number",
+        "value": "ABCDE1234F",
+        "confidence": 0.6,
+        "reason": "reads agreed 2/2; rule: matches PAN format AAAAA9999A; CONFLICT (PAN): documents disagree and no value is confirmed by two documents"
+      }
+    ],
+    "needs_human_review": true
+  },
+  {
+    "file": "Illustration.jpeg",
+    "document_type": "Benefit Illustration Declaration",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (1 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "Application Number": {
+        "value": "1500137601025",
+        "confidence": 0.68,
+        "agreement": "0/3",
+        "rule": "digits only",
+        "source": "handwritten",
+        "alternatives": [
+          "1500137401025",
+          "1500137601005"
+        ],
+        "reads": {
+          "1500137401025": 1,
+          "1500137601005": 2
+        },
+        "cross_check": "RECONCILED (application / policy number): read '1500137601005' is 1 character from ['1500137601025'] on other documents; corrected - verify"
+      },
+      "Policyholder Name": {
+        "value": "Ashok",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Ashok": 3
+        },
+        "cross_check": "agrees with other documents (customer name)"
+      },
+      "Date": {
+        "value": "26/04/2026",
+        "confidence": 0.73,
+        "agreement": "2/3",
+        "rule": "valid date",
+        "source": "handwritten",
+        "alternatives": [
+          "06/04/2026"
+        ],
+        "reads": {
+          "06/04/2026": 1,
+          "26/04/2026": 2
+        },
+        "cross_check": "agrees with other documents (signing date)"
+      },
+      "Place": {
+        "value": "West Bihar",
+        "confidence": 0.63,
+        "agreement": "1/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [
+          "West Biba"
+        ],
+        "reads": {
+          "West Bihar": 1,
+          "West Biba": 2
+        },
+        "cross_check": "RECONCILED (signing place): reads disagreed; chose 'West Bihar' over 'West Biba' because other documents say ['West Bihar']"
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "Application Number": "1500137401025",
+          "Policyholder Name": "Ashok",
+          "Date": "06/04/2026",
+          "Place": "West Bihar"
+        }
+      },
+      {
+        "read": "zoomed region",
+        "values": {
+          "Application Number": "1500137601005",
+          "Policyholder Name": "Ashok",
+          "Date": "26/04/2026",
+          "Place": "West Biba"
+        }
+      },
+      {
+        "read": "zoomed region, char-by-char",
+        "values": {
+          "Application Number": "1500137601005",
+          "Policyholder Name": "Ashok",
+          "Date": "26/04/2026",
+          "Place": "West Biba"
+        }
+      }
+    ],
+    "flags": [
+      {
+        "field": "Application Number",
+        "value": "1500137601025",
+        "confidence": 0.68,
+        "reason": "reads agreed 0/3; other readings: ['1500137401025', '1500137601005']; rule: digits only; RECONCILED (application / policy number): read '1500137601005' is 1 character from ['1500137601025'] on other documents; corrected - verify"
+      },
+      {
+        "field": "Date",
+        "value": "26/04/2026",
+        "confidence": 0.73,
+        "reason": "reads agreed 2/3; other readings: ['06/04/2026']; rule: valid date"
+      },
+      {
+        "field": "Place",
+        "value": "West Bihar",
+        "confidence": 0.63,
+        "reason": "reads agreed 1/3; other readings: ['West Biba']; rule: no format rule; RECONCILED (signing place): reads disagreed; chose 'West Bihar' over 'West Biba' because other documents say ['West Bihar']"
+      }
+    ],
+    "needs_human_review": true
+  },
+  {
+    "file": "Moral.jpeg",
+    "document_type": "Moral Hazard Questionnaire",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (1 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "Application Number": {
+        "value": "1500137601025",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "digits only",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "1500137601025": 3
+        },
+        "cross_check": "agrees with other documents (application / policy number)"
+      },
+      "Name of Life Assured": {
+        "value": "Ashok",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Ashok": 3
+        },
+        "cross_check": "agrees with other documents (customer name)"
+      },
+      "Nominee Relationship": {
+        "value": "Nephew",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Nephew": 3
+        }
+      },
+      "Date": {
+        "value": "26/04/2026",
+        "confidence": 0.73,
+        "agreement": "2/3",
+        "rule": "valid date",
+        "source": "handwritten",
+        "alternatives": [
+          "26/04/2006"
+        ],
+        "reads": {
+          "26/04/2006": 1,
+          "26/04/2026": 2
+        },
+        "cross_check": "agrees with other documents (signing date)"
+      },
+      "Place": {
+        "value": "West Bihar",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "West Bihar": 3
+        },
+        "cross_check": "agrees with other documents (signing place)"
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "Application Number": "1500137601025",
+          "Name of Life Assured": "Ashok",
+          "Nominee Relationship": "Nephew",
+          "Date": "26/04/2006",
+          "Place": "West Bihar"
+        }
+      },
+      {
+        "read": "zoomed region",
+        "values": {
+          "Application Number": "1500137601025",
+          "Name of Life Assured": "Ashok",
+          "Nominee Relationship": "Nephew",
+          "Date": "26/04/2026",
+          "Place": "West Bihar"
+        }
+      },
+      {
+        "read": "zoomed region, char-by-char",
+        "values": {
+          "Application Number": "1500137601025",
+          "Name of Life Assured": "Ashok",
+          "Nominee Relationship": "Nephew",
+          "Date": "26/04/2026",
+          "Place": "West Bihar"
+        }
+      }
+    ],
+    "flags": [
+      {
+        "field": "Date",
+        "value": "26/04/2026",
+        "confidence": 0.73,
+        "reason": "reads agreed 2/3; other readings: ['26/04/2006']; rule: valid date"
+      }
+    ],
+    "needs_human_review": true
+  },
+  {
+    "file": "Proposal Ashok.pdf",
+    "document_type": "Other / Unknown",
+    "classification_confidence": 0.9,
+    "classification_reason": "no known type matched by either keyword rule or vision model",
+    "pages": 2,
+    "fields": {},
+    "reads": [],
+    "flags": [
+      {
+        "field": "(document)",
+        "reason": "Document type is not one of the 10 expected types; no extraction schema - route to human review."
+      }
+    ],
+    "needs_human_review": true
+  },
+  {
+    "file": "split.jpeg",
+    "document_type": "Multiple Policies Consent Form",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (3 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "Proposer Name": {
+        "value": "Ashok",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Ashok": 3
+        },
+        "cross_check": "agrees with other documents (customer name)"
+      },
+      "Reason for Multiple Policies": {
+        "value": "Financial Planning",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Financial Planning": 3
+        }
+      },
+      "Date": {
+        "value": "26/04/2026",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "valid date",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "26/04/2026": 3
+        },
+        "cross_check": "agrees with other documents (signing date)"
+      },
+      "Place": {
+        "value": "West Bihar",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "West Bihar": 3
+        },
+        "cross_check": "agrees with other documents (signing place)"
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "Proposer Name": "Ashok",
+          "Reason for Multiple Policies": "Financial Planning",
+          "Date": "26/04/2026",
+          "Place": "West Bihar"
+        }
+      },
+      {
+        "read": "zoomed region",
+        "values": {
+          "Proposer Name": "Ashok",
+          "Reason for Multiple Policies": "Financial Planning",
+          "Date": "26/04/2026",
+          "Place": "West Bihar"
+        }
+      },
+      {
+        "read": "zoomed region, char-by-char",
+        "values": {
+          "Proposer Name": "Ashok",
+          "Reason for Multiple Policies": "Financial Planning",
+          "Date": "26/04/2026",
+          "Place": "West Bihar"
+        }
+      }
+    ],
+    "flags": [],
+    "needs_human_review": false
+  },
+  {
+    "file": "suitability.jpeg",
+    "document_type": "Suitability Profiler Declaration",
+    "classification_confidence": 0.99,
+    "classification_reason": "keyword rule and vision model agree (1 keyword hit(s))",
+    "pages": 1,
+    "fields": {
+      "Application Number": {
+        "value": "1500137601025",
+        "confidence": 0.73,
+        "agreement": "2/3",
+        "rule": "digits only",
+        "source": "handwritten",
+        "alternatives": [
+          "1500131601025"
+        ],
+        "reads": {
+          "1500131601025": 1,
+          "1500137601025": 2
+        },
+        "cross_check": "agrees with other documents (application / policy number)"
+      },
+      "Name of Life Assured": {
+        "value": "Ashok",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Ashok": 3
+        },
+        "cross_check": "agrees with other documents (customer name)"
+      },
+      "Name of Agent/SP": {
+        "value": "Ramesh Kumar",
+        "confidence": 0.95,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "Ramesh Kumar": 3
+        }
+      },
+      "Date": {
+        "value": "26/04/2026",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "valid date",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "26/04/2026": 3
+        },
+        "cross_check": "agrees with other documents (signing date)"
+      },
+      "Place": {
+        "value": "West Bihar",
+        "confidence": 1.0,
+        "agreement": "3/3",
+        "rule": "no format rule",
+        "source": "handwritten",
+        "alternatives": [],
+        "reads": {
+          "West Bihar": 3
+        },
+        "cross_check": "agrees with other documents (signing place)"
+      }
+    },
+    "reads": [
+      {
+        "read": "full page",
+        "values": {
+          "Application Number": "1500131601025",
+          "Name of Life Assured": "Ashok",
+          "Name of Agent/SP": "Ramesh Kumar",
+          "Date": "26/04/2026",
+          "Place": "West Bihar"
+        }
+      },
+      {
+        "read": "zoomed region",
+        "values": {
+          "Application Number": "1500137601025",
+          "Name of Life Assured": "Ashok",
+          "Name of Agent/SP": "Ramesh Kumar",
+          "Date": "26/04/2026",
+          "Place": "West Bihar"
+        }
+      },
+      {
+        "read": "zoomed region, char-by-char",
+        "values": {
+          "Application Number": "1500137601025",
+          "Name of Life Assured": "Ashok",
+          "Name of Agent/SP": "Ramesh Kumar",
+          "Date": "26/04/2026",
+          "Place": "West Bihar"
+        }
+      }
+    ],
+    "flags": [
+      {
+        "field": "Application Number",
+        "value": "1500137601025",
+        "confidence": 0.73,
+        "reason": "reads agreed 2/3; other readings: ['1500131601025']; rule: digits only"
+      }
+    ],
+    "needs_human_review": true
+  }
+]

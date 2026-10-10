@@ -1,0 +1,9 @@
+pandas>=2.2
+openpyxl>=3.1
+ollama>=0.5
+streamlit>=1.40
+chromadb>=1.0
+pymupdf>=1.25
+pillow>=11.0
+ddgs>=9.0
+jupyter

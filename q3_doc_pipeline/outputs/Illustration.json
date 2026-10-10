@@ -1,0 +1,117 @@
+{
+  "file": "Illustration.jpeg",
+  "document_type": "Benefit Illustration Declaration",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (1 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "Application Number": {
+      "value": "1500137601025",
+      "confidence": 0.68,
+      "agreement": "0/3",
+      "rule": "digits only",
+      "source": "handwritten",
+      "alternatives": [
+        "1500137401025",
+        "1500137601005"
+      ],
+      "reads": {
+        "1500137401025": 1,
+        "1500137601005": 2
+      },
+      "cross_check": "RECONCILED (application / policy number): read '1500137601005' is 1 character from ['1500137601025'] on other documents; corrected - verify"
+    },
+    "Policyholder Name": {
+      "value": "Ashok",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Ashok": 3
+      },
+      "cross_check": "agrees with other documents (customer name)"
+    },
+    "Date": {
+      "value": "26/04/2026",
+      "confidence": 0.73,
+      "agreement": "2/3",
+      "rule": "valid date",
+      "source": "handwritten",
+      "alternatives": [
+        "06/04/2026"
+      ],
+      "reads": {
+        "06/04/2026": 1,
+        "26/04/2026": 2
+      },
+      "cross_check": "agrees with other documents (signing date)"
+    },
+    "Place": {
+      "value": "West Bihar",
+      "confidence": 0.63,
+      "agreement": "1/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [
+        "West Biba"
+      ],
+      "reads": {
+        "West Bihar": 1,
+        "West Biba": 2
+      },
+      "cross_check": "RECONCILED (signing place): reads disagreed; chose 'West Bihar' over 'West Biba' because other documents say ['West Bihar']"
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "Application Number": "1500137401025",
+        "Policyholder Name": "Ashok",
+        "Date": "06/04/2026",
+        "Place": "West Bihar"
+      }
+    },
+    {
+      "read": "zoomed region",
+      "values": {
+        "Application Number": "1500137601005",
+        "Policyholder Name": "Ashok",
+        "Date": "26/04/2026",
+        "Place": "West Biba"
+      }
+    },
+    {
+      "read": "zoomed region, char-by-char",
+      "values": {
+        "Application Number": "1500137601005",
+        "Policyholder Name": "Ashok",
+        "Date": "26/04/2026",
+        "Place": "West Biba"
+      }
+    }
+  ],
+  "flags": [
+    {
+      "field": "Application Number",
+      "value": "1500137601025",
+      "confidence": 0.68,
+      "reason": "reads agreed 0/3; other readings: ['1500137401025', '1500137601005']; rule: digits only; RECONCILED (application / policy number): read '1500137601005' is 1 character from ['1500137601025'] on other documents; corrected - verify"
+    },
+    {
+      "field": "Date",
+      "value": "26/04/2026",
+      "confidence": 0.73,
+      "reason": "reads agreed 2/3; other readings: ['06/04/2026']; rule: valid date"
+    },
+    {
+      "field": "Place",
+      "value": "West Bihar",
+      "confidence": 0.63,
+      "reason": "reads agreed 1/3; other readings: ['West Biba']; rule: no format rule; RECONCILED (signing place): reads disagreed; chose 'West Bihar' over 'West Biba' because other documents say ['West Bihar']"
+    }
+  ],
+  "needs_human_review": true
+}

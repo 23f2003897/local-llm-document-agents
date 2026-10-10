@@ -1,0 +1,107 @@
+{
+  "file": "Fatca.jpeg",
+  "document_type": "FATCA Annexure Form",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (4 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "Policy Number": {
+      "value": "1500137601025",
+      "confidence": 1.0,
+      "agreement": "3/3",
+      "rule": "digits only",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "1500137601025": 3
+      },
+      "cross_check": "agrees with other documents (application / policy number)"
+    },
+    "TIN / PAN": {
+      "value": "BPQPD3051R",
+      "confidence": 0.6,
+      "agreement": "3/3",
+      "rule": "matches PAN format AAAAA9999A",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "BPQPD3051R": 3
+      },
+      "cross_check": "CONFLICT (PAN): documents disagree and no value is confirmed by two documents"
+    },
+    "Father's Name": {
+      "value": "Arjun Das Kumar",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Arjun Das Kumar": 3
+      }
+    },
+    "Place of Birth": {
+      "value": "West Bihar",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "West Bihar": 3
+      }
+    },
+    "Nationality": {
+      "value": "Indian",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "Indian": 3
+      }
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "Policy Number": "1500137601025",
+        "TIN / PAN": "BPQPD3051R",
+        "Father's Name": "Arjun Das Kumar",
+        "Place of Birth": "West Bihar",
+        "Nationality": "Indian"
+      }
+    },
+    {
+      "read": "zoomed region",
+      "values": {
+        "Policy Number": "1500137601025",
+        "TIN / PAN": "BPQPD3051R",
+        "Father's Name": "Arjun Das Kumar",
+        "Place of Birth": "West Bihar",
+        "Nationality": "Indian"
+      }
+    },
+    {
+      "read": "zoomed region, char-by-char",
+      "values": {
+        "Policy Number": "1500137601025",
+        "TIN / PAN": "BPQPD3051R",
+        "Father's Name": "Arjun Das Kumar",
+        "Place of Birth": "West Bihar",
+        "Nationality": "Indian"
+      }
+    }
+  ],
+  "flags": [
+    {
+      "field": "TIN / PAN",
+      "value": "BPQPD3051R",
+      "confidence": 0.6,
+      "reason": "reads agreed 3/3; rule: matches PAN format AAAAA9999A; CONFLICT (PAN): documents disagree and no value is confirmed by two documents"
+    }
+  ],
+  "needs_human_review": true
+}

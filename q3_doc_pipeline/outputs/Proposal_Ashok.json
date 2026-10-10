@@ -1,0 +1,16 @@
+{
+  "file": "Proposal Ashok.pdf",
+  "document_type": "Other / Unknown",
+  "classification_confidence": 0.9,
+  "classification_reason": "no known type matched by either keyword rule or vision model",
+  "pages": 2,
+  "fields": {},
+  "reads": [],
+  "flags": [
+    {
+      "field": "(document)",
+      "reason": "Document type is not one of the 10 expected types; no extraction schema - route to human review."
+    }
+  ],
+  "needs_human_review": true
+}

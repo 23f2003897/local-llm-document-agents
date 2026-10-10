@@ -1,0 +1,98 @@
+{
+  "file": "ECS.jpeg",
+  "document_type": "NACH / ECS Mandate",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (3 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "Bank Account Number": {
+      "value": "31004258912",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "9-18 digits",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "31004258912": 3
+      }
+    },
+    "IFSC Code": {
+      "value": "SBIN0227112",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "matches IFSC format AAAA0XXXXXX",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "SBIN0227112": 3
+      }
+    },
+    "Bank Name": {
+      "value": "State Bank of India",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "State Bank of India": 3
+      }
+    },
+    "Amount (figures)": {
+      "value": "50000",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "numeric",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "50000": 3
+      }
+    },
+    "Frequency": {
+      "value": "As & when presented",
+      "confidence": 0.95,
+      "agreement": "3/3",
+      "rule": "no format rule",
+      "source": "handwritten",
+      "alternatives": [],
+      "reads": {
+        "As & when presented": 3
+      }
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "Bank Account Number": "31004258912",
+        "IFSC Code": "SBIN0227112",
+        "Bank Name": "State Bank of India",
+        "Amount (figures)": "50000",
+        "Frequency": "As & when presented"
+      }
+    },
+    {
+      "read": "zoomed region",
+      "values": {
+        "Bank Account Number": "31004258912",
+        "IFSC Code": "SBIN0227112",
+        "Bank Name": "State Bank of India",
+        "Amount (figures)": "50000",
+        "Frequency": "As & when presented"
+      }
+    },
+    {
+      "read": "zoomed region, char-by-char",
+      "values": {
+        "Bank Account Number": "31004258912",
+        "IFSC Code": "SBIN0227112",
+        "Bank Name": "State Bank of India",
+        "Amount (figures)": "50000",
+        "Frequency": "As & when presented"
+      }
+    }
+  ],
+  "flags": [],
+  "needs_human_review": false
+}

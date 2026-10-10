@@ -1,0 +1,84 @@
+{
+  "file": "Aadhar.png",
+  "document_type": "Aadhaar Card",
+  "classification_confidence": 0.99,
+  "classification_reason": "keyword rule and vision model agree (4 keyword hit(s))",
+  "pages": 1,
+  "fields": {
+    "Aadhaar Number": {
+      "value": "123456789012",
+      "confidence": 0.5,
+      "agreement": "2/2",
+      "rule": "12 digits but Verhoeff check digit fails (number cannot be a real Aadhaar)",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "123456789012": 2
+      }
+    },
+    "Full Name": {
+      "value": "Mr. Ashok",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "no format rule",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "Mr. Ashok": 2
+      },
+      "cross_check": "agrees with other documents (customer name)"
+    },
+    "Date of Birth": {
+      "value": "18/12/1979",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "valid date",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "18/12/1979": 2
+      },
+      "cross_check": "agrees with other documents (date of birth)"
+    },
+    "Address": {
+      "value": "S/O Kumar, Kataia, West Bihar India - 841543",
+      "confidence": 1.0,
+      "agreement": "2/2",
+      "rule": "no format rule",
+      "source": "printed",
+      "alternatives": [],
+      "reads": {
+        "S/O Kumar, Kataia, West Bihar India - 841543": 2
+      }
+    }
+  },
+  "reads": [
+    {
+      "read": "full page",
+      "values": {
+        "Aadhaar Number": "123456789012",
+        "Full Name": "Mr. Ashok",
+        "Date of Birth": "18/12/1979",
+        "Address": "S/O Kumar, Kataia, West Bihar India - 841543"
+      }
+    },
+    {
+      "read": "full page, char-by-char",
+      "values": {
+        "Aadhaar Number": "123456789012",
+        "Full Name": "Mr. Ashok",
+        "Date of Birth": "18/12/1979",
+        "Address": "S/O Kumar, Kataia, West Bihar India - 841543"
+      }
+    }
+  ],
+  "flags": [
+    {
+      "field": "Aadhaar Number",
+      "value": "123456789012",
+      "confidence": 0.5,
+      "reason": "reads agreed 2/2; rule: 12 digits but Verhoeff check digit fails (number cannot be a real Aadhaar)"
+    }
+  ],
+  "needs_human_review": true
+}
